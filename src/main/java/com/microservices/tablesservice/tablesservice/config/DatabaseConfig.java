@@ -58,7 +58,7 @@ public class DatabaseConfig {
         LocalContainerEntityManagerFactoryBean factoryBean =
                 new LocalContainerEntityManagerFactoryBean();
         factoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-        factoryBean.setPackagesToScan("com.microservices.tablesservice.entity");
+        factoryBean.setPackagesToScan("com.microservices.tablesservice.tablesservice.entity");
         factoryBean.setDataSource(dataSource);
         factoryBean.setJpaProperties(hibernateProperties());
         factoryBean.afterPropertiesSet();
