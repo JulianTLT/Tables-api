@@ -42,7 +42,7 @@ public class TableServiceImpl implements TableService {
     }
 
     @Override
-    public Table Update(Table table) throws SaveException {
+    public Table update(Table table) throws SaveException {
         TableEntity entity = converter.modelToEntity(table);
         TableEntity save;
         try {

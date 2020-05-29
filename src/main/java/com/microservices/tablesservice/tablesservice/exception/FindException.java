@@ -1,5 +1,8 @@
 package com.microservices.tablesservice.tablesservice.exception;
 
+import lombok.Data;
+
+@Data
 public class FindException extends Exception {
     private String message;
 
